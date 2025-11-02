@@ -39,7 +39,9 @@
      --font-arrow: system-ui, sans-serif;
 
      --space-header-paragraph:8px;
-     --space-section:40px;
+     --space-section-vertical:50px;
+     --space-section-horizontal:35px;
+     --space-article:40px;
 
      --line-height-h1-h2:1.1;
      --line-height-h3-h4:1.2;
@@ -240,6 +242,7 @@ footer{
 .site-footer {
   text-align: center;
   padding: 5px 0;
+  border-top: 1.5px solid black;
 }
 .site-footer h2{
     font-size: var(--font-size-h2);
@@ -313,3 +316,276 @@ footer{
     margin: 45px 0 5px 25px;
 }
 
+/* zara_casestudy_page */
+/* header_section */
+.project_name{
+    font-style: normal;
+}
+.project_name h1{
+    display: flex;
+    justify-content: center;
+    margin: 80px var(--space-section-horizontal) 10px;
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1-h2);
+}
+
+.role{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.year{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.A_info{
+    font-weight: bold;
+}
+.info_column1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.info_column2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.project-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 30px var(--space-section-horizontal);
+    font-size: var(--font-tag);
+    line-height: var(--line-height-p);
+}
+.image-block{
+    display: flex;
+    justify-content: center;
+}
+.zara_website{
+    width: 350px;
+}
+
+/* overview_section */
+.project_overview{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.intro{
+    margin-bottom: var(--space-article);
+}
+.intro h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+    margin-bottom: 0;
+}
+.background h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.project_overview p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph)
+}
+
+/* problem_section */
+.problem{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.problem h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+}
+.problem h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.problem p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph);
+}
+.problem1{
+    margin-bottom:var(--space-article);
+}
+.problem2{
+    margin-bottom:var(--space-article);
+}
+
+/* user_section */
+.user{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.user h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+    margin-bottom: 0;
+}
+.user h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.user p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph);
+}
+.target_audience{
+    margin-bottom:var(--space-article);
+}
+.zara_user_persona{
+    width: 100%;
+    height: auto;
+}
+
+/* goal_section */
+.redesign_goal{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.redesign_goal h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+}
+.redesign_goal h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.redesign_goal p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph);
+}
+.goal1{
+    margin-bottom:var(--space-article);
+}
+.goal2{
+    margin-bottom:var(--space-article);
+}
+
+/* goal_section */
+.solution{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+
+.solution h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+}
+
+.solution h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.solution p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph);
+}
+.zara_homepage{
+    width: 100%;
+    height: auto;
+}
+.zara_product_detail_page{
+    width: 100%;
+    height: auto;
+}
+.zara_filter{
+    width: 100%;
+    height: auto;
+}
+.solution1{
+    margin-bottom:var(--space-article);
+}
+.solution2{
+    margin-bottom:var(--space-article);
+}
+
+/* result_section */
+.result{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.result h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+}
+.result h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3-h4);
+    margin-bottom: 0;
+}
+.result p{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-top: var(--space-header-paragraph);
+}
+.result1{
+    margin-bottom:var(--space-article);
+}
+.result2{
+    margin-bottom:var(--space-article);
+}
+
+/* prototype_section */
+.case_button{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 50px;
+}
+
+/* navlink_section */
+.next_link{
+    display: flex;
+    justify-content: end;
+    margin: 0 45px 60px 0;
+}
+
+/* airbnb_casestudy_page */
+.airbnb_app{
+    width: 350px;
+}
+.airbnb_user_persona{
+    width: 100%;
+    height: auto;
+}
+.airbnb_app_solution{
+    width: 100%;
+    height: auto;
+}
+.interaction_enhancement{
+    margin: var(--space-section-vertical) var(--space-section-horizontal);
+}
+.interaction_enhancement h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h1-h2);
+}
+.line_1{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+.line_2{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    margin-bottom:var(--space-article);
+}
+.airbnb_interaction{
+    width: 55%;    
+    display: block; 
+    margin: 0 auto;
+}
