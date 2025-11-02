@@ -67,6 +67,7 @@ footer{
     background-color: var(--footer-color);
 }
 
+/* home_page */
 /* navigation_bar */
 .top_nav{
     display: flex;
@@ -89,10 +90,12 @@ footer{
     margin: 85px auto 173px;
     text-align: center;
 }
+
 .hero h1{
     font-style: italic;
     font-size: var(--font-size-h1);
-    line-height: var(--line-height-h1-h2)
+    line-height: var(--line-height-h1-h2);
+    margin-bottom: 10px;
 }
 .hero h3{
     font-weight: lighter;
@@ -265,3 +268,48 @@ footer{
     font: var(--font-size-h4);
     margin: 10px 0;
 }
+
+/* about_page */
+.self_intro{
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+    flex-wrap: wrap; 
+    font-style: italic;
+    gap: 15px;
+    margin: 50px auto 0;
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1-h2);
+}
+.subline{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1-h2);
+}
+.profile_image{
+    width: 70px;
+}
+.intro_p{
+    font-size: var(--font-size-p);
+    max-width: 85%;
+    margin: 35px auto;
+    line-height: var(--line-height-p);
+}
+.selfie{
+    display: flex;
+    justify-content: center;
+    margin: 55px 0;
+}
+.photo{
+    width: 250px;
+}
+
+/* projects_page */
+.project_title{
+    font-style: italic;
+    margin: 45px 0 5px 25px;
+}
+
