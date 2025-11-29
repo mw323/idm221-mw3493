@@ -23,6 +23,9 @@
      --footer-color:#0291DC;
      --text-color-light:#1F0000;
      --text-color-dark:#FFFBEA;
+     --menu-icon-color:#1F0000;
+     --nav-background-color:#FFFBEA;
+     --nav-a-hover-bg-color:#0291DC;
 
      --font-size-h1:38px;
      --font-size-h2:28px;
@@ -42,6 +45,7 @@
      --space-section-vertical:50px;
      --space-section-horizontal:35px;
      --space-article:40px;
+     --nav-height: 48px;
 
      --line-height-h1-h2:1.1;
      --line-height-h3-h4:1.2;
@@ -50,10 +54,6 @@
 
 * {
     box-sizing:border-box;
-}
-html{
-  height: 100%;
-  margin: 0;
 }
 
 .site-wrapper{
@@ -69,30 +69,117 @@ footer{
     background-color: var(--footer-color);
 }
 
-/* home_page */
 /* navigation_bar */
-.top_nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 20px;
+header{
+    background: var(--background-color);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+label{
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    width: 26px;
+    z-index: 1001;
+
+span{
+    background-color:var(--menu-icon-color);
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+
+    transform-origin: left;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+        top: 0;
+    }
+
+    &:nth-child(2) {
+        top: 8px;
+    }
+
+    &:nth-child(3) {
+        top: 16px;
+    }
+    }
+  }
+}
+
+nav {
+  background: var(--nav-background-color);
+  height: 100vh;
+  margin-block-start: var(--nav-height);
+  width: 240px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 0;
+      font-family: var(--font-body);
+
+      a {
+        color: var(--text-color-light);
+        display: block;
+        font-size: 20px;
+        padding-block: 20px;
+        padding-inline: 20px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--nav-a-hover-bg-color);
+          color: var(--text-color-dark);
+        }
+      }
+    }
+  }
+
+  position: fixed;
+  right: -300px;
+  top: 0;
+  z-index: 1000;
+
+  transition: right 0.3s ease;
+}
+
+/* Show nav when checkbox is checked */
+.nav-toggle:checked ~ nav {
+  right: 0;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -2px; /* Fix */
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .logo{
-    width: 75px;
+    width: 80px;
+    margin: 16px 0 0 20px
 }
 
-.menu{
-    width: 45px;
-}
-
+/* home_page */
 /* hero_section */
 .hero{
-    margin: 85px auto 173px;
+    margin: 150px auto;
     text-align: center;
 }
-
 .hero h1{
     font-style: italic;
     font-size: var(--font-size-h1);
@@ -143,7 +230,7 @@ footer{
 
 .project-number{
     font-size: var(--font-project-number);
-    margin: 0 0 0 20px;
+    margin: 10px 0 0 20px;
 }
 .case_study1 h3{
     font-size: var(--font-size-h3);
@@ -157,6 +244,7 @@ footer{
     font-size: var(--font-tag);
     font-style: italic;
     margin: 18px 0 0 15px;
+    width: auto;
 }
 .tag1{
     border:1px solid var(--text-color-light);
@@ -257,12 +345,13 @@ footer{
     gap: 45px; 
     margin-top: 30px;
 }
-.site-footer h1{
+.footer-big-text{
     font-family: var(--font-footer-secondary);
     color: var(--text-color-dark);
     font-size: var(--font-footer);
     letter-spacing: 1.2px;
-    margin: 20px 0 10px;
+    display: inline-block;
+    margin: 20px 0 5px;
 }
 
 .site-footer h4{
@@ -280,18 +369,11 @@ footer{
     flex-wrap: wrap; 
     font-style: italic;
     gap: 15px;
-    margin: 50px auto 0;
+    margin: 100px auto 0;
     font-size: var(--font-size-h1);
     line-height: var(--line-height-h1-h2);
 }
-.subline{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    font-style: italic;
-    font-size: var(--font-size-h1);
-    line-height: var(--line-height-h1-h2);
-}
+
 .profile_image{
     width: 70px;
 }
@@ -304,29 +386,36 @@ footer{
 .selfie{
     display: flex;
     justify-content: center;
-    margin: 55px 0;
+    margin: 70px auto;
 }
 .photo{
     width: 250px;
 }
+.resume{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
 
 /* projects_page */
 .project_title{
+    display: flex;
+    justify-content: center;
     font-style: italic;
-    margin: 45px 0 5px 25px;
+    margin: 110px auto 0
 }
 
 /* zara_casestudy_page */
-/* header_section */
-.project_name{
-    font-style: normal;
+.zara_case{
+    margin-top: 100px;
 }
 .project_name h1{
-    display: flex;
-    justify-content: center;
-    margin: 80px var(--space-section-horizontal) 10px;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
     font-size: var(--font-size-h1);
     line-height: var(--line-height-h1-h2);
+    font-style: normal;
 }
 
 .role{
@@ -365,7 +454,8 @@ footer{
 .project-info{
     display: flex;
     flex-wrap: wrap;
-    gap: 150px;
+    justify-content: center;
+    gap: 135px;
     margin: 30px var(--space-section-horizontal);
     font-size: var(--font-tag);
     line-height: var(--line-height-p);
@@ -557,6 +647,9 @@ footer{
 }
 
 /* airbnb_casestudy_page */
+.airbnb_case{
+    margin-top: 100px;
+}
 .airbnb_app{
     width: 350px;
 }
