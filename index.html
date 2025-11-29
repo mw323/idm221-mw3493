@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="site-wrapper">
-    <header class="top_nav">
-        <div class="nav_logo">
-            <a href="index.html">
-                <img src="images/logo.webp" alt="logo" class="logo">
-            </a>
-        </div>
-
-        <div class="nav_menu">
-            <img src="images/menu.svg" alt="menu icon" class="menu">
-        </div>
+    <header>
+      <a href="index.html"><img src="images/logo.webp" alt="logo" class="logo"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -73,7 +79,7 @@
         </div>
     </main>
 
-    <footer class="site-footer">
+    <footer id="footer" class="site-footer">
         <h2>Get in touch &#128075;</h2>
     <div class="contact">
         <a href="mailto:mw3493@drexel.edu">

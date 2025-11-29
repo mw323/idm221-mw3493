@@ -8,22 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="site-wrapper">
-    <header class="top_nav">
-        <div class="nav_logo">
-            <a href="index.html">
-                <img src="images/logo.webp" alt="logo" class="logo">
-            </a>
-        </div>
-
-        <div class="nav_menu">
-            <img src="images/menu.svg" alt="menu icon" class="menu">
-        </div>
+    <header>
+      <a href="index.html"><img src="images/logo.webp" alt="logo" class="logo"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
         <article class="zara_case">
-            <header class="project_name">
+            <div class="project_name">
                 <h1>Zara Website Redesign</h1>
+            </div>
             <aside class="project-info">
                 <div class="info_column1">
                     <div class="role">
@@ -52,7 +59,6 @@
                 <div class="image-block">
                     <img src="images/zara.webp" alt="zara wesbite display" class="zara_website">
                 </div>
-            </header>
 
             <section class="project_overview">
                 <div class="intro">

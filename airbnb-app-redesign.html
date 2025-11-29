@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="site-wrapper">
-    <header class="top_nav">
-        <div class="nav_logo">
-            <a href="index.html">
-                <img src="images/logo.webp" alt="logo" class="logo">
-            </a>
-        </div>
-
-        <div class="nav_menu">
-            <img src="images/menu.svg" alt="menu icon" class="menu">
-        </div>
+    <header>
+      <a href="index.html"><img src="images/logo.webp" alt="logo" class="logo"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
         <article class="airbnb_case">
-             <header class="project_name">
+             <div class="project_name">
                 <h1>Airbnb App Redesign</h1>
-             <aside class="project-info">
+            </div>
+          <aside class="project-info">
                 <div class="info_column1">
                     <div class="role">
                         <span class="A_info">ROLE</span>
@@ -40,7 +47,7 @@
                 <div class="info_column2">
                     <div class="tool">
                         <span class="A_info">TOOL</span>
-                        <span class="value">Figma,Jitter</span>
+                        <span class="value">Figma</span>
                     </div>
 
                     <div class="year">
@@ -52,7 +59,6 @@
                 <div class="image-block">
                     <img src="images/airbnb-display.webp" alt="airbnb app display" class="airbnb_app">
                 </div>
-            </header>
 
             <section class="project_overview">
                 <div class="intro">
@@ -165,7 +171,7 @@
         </div>
     </main>
 
-    <footer class="site-footer">
+    <footer id="footer" class="site-footer">
         <h2>Get in touch &#128075;</h2>
     <div class="contact">
         <a href="mailto:mw3493@drexel.edu">
