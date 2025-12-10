@@ -259,7 +259,7 @@ nav {
 .site-footer {
   text-align: center;
   padding: 5px 0;
-  border-top: 1.5px solid black;
+  border-top: 1.5px solid var(--text-color-light);
 }
 .site-footer h2{
     font-size: var(--font-size-h2);
