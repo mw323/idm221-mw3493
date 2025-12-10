@@ -290,7 +290,7 @@ nav {
 .site-footer h4{
     font-family: var(--font-footer-primary);
     color: var(--text-color-dark);
-    font: var(--font-size-h4);
+    font-size: var(--font-size-h4);
     margin: 10px 0;
 }
 
@@ -319,7 +319,7 @@ nav {
 }
 .resume{
     text-align: center;
-    margin: 70px auto;
+    margin: 70px auto 100px;
 }
 
 /* projects_page */
@@ -334,7 +334,7 @@ nav {
 
 /* zara_casestudy_page */
 .case-study{
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .project_name h1{
     margin: 20px auto;
@@ -357,7 +357,7 @@ nav {
 }
 .section_line2{
     border: 1px solid var(--text-color-light);
-    margin: 40px auto;
+    margin: 30px auto;
 }
 .All-info h2{
     font-size: var(--font-size-h2);
@@ -378,24 +378,9 @@ nav {
     line-height: var(--line-height-p);
     margin: var(--space-header-paragraph) auto var(--space-article)
 }
-.design_process{
+.info-block{
     margin-bottom: var(--space-section-gap);
 }
-.problem{
-    margin-bottom: var(--space-section-gap);
-}
-.user{
-    margin-bottom: var(--space-section-gap);
-}
-.redesign_goal{
-    margin-bottom: var(--space-section-gap);
-}
-.solution{
-    margin-bottom: var(--space-section-gap);
-}
-.result{
-    margin-bottom: var(--space-section-vertical);
-}  
 .design-process-image{
     width: 100%;
     margin-top: var(--space-article) ;
@@ -423,9 +408,6 @@ nav {
 }
 
 /* airbnb_casestudy_page */
-.interaction_enhancement{
-    margin-bottom: var(--space-section-gap);
-}
 .airbnb_case{
     margin-top: 100px;
 }
